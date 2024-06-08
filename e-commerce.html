@@ -15,13 +15,13 @@
 
         .topnav {
             overflow: hidden;
-            background-color: rgba(73, 222, 70, 0.7); 
-            text-align: left; 
+            background-color: rgba(73, 222, 70, 0.7);
+            text-align: left;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            padding: 20px 0; 
+            padding: 20px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -39,7 +39,7 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 30px; 
+            font-size: 30px;
             margin: 0;
             cursor: pointer;
             position: relative;
@@ -53,7 +53,7 @@
         .search-container {
             display: flex;
             align-items: center;
-            margin-right: 20px; 
+            margin-right: 20px;
         }
 
         .search-input {
@@ -105,7 +105,7 @@
         }
 
         .order-button {
-            background-color: rgba(73, 222, 70, 0.8); 
+            background-color: rgba(73, 222, 70, 0.8);
             border: none;
             color: white;
             padding: 15px 62px;
@@ -128,7 +128,7 @@
         }
 
         .sign-in-button {
-            background-color: rgba(73, 222, 70, 0.8); 
+            background-color: rgba(73, 222, 70, 0.8);
             border: none;
             color: white;
             padding: 15px 30px;
@@ -140,6 +140,9 @@
             cursor: pointer;
             border-radius: 20px;
             font-weight: bold;
+            position: absolute;
+            top: 800px;
+            right: 20px;
         }
 
         .sign-in-button:hover {
@@ -151,7 +154,7 @@
             padding: 100px 20px;
             min-height: 100vh;
             box-sizing: border-box;
-            background-color: rgba(0, 0, 0, 0.5); 
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         #home {
@@ -160,31 +163,31 @@
 
         .divider {
             height: 20px;
-            background-color: rgb(10, 6, 6); 
-            margin: 0; 
-            width: 100%; 
-            margin: 0 auto; 
+            background-color: rgb(10, 6, 6);
+            margin: 0;
+            width: 100%;
+            margin: 0 auto;
         }
 
-        #menu {
-            background-color: rgba(0, 0, 0, 0.5); 
+        #menu1, #menu2, #about, #contact, #log-in {
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         .sub-menu {
             display: none;
             position: absolute;
-            background-color: rgba(65, 168, 64, 0.7); 
+            background-color: rgba(65, 168, 64, 0.7);
             min-width: 160px;
-            z-index: 1001; 
-            top: 0;
-            right: 100%;
+            z-index: 1001;
+            top: 100%;
+            left: 0;
         }
 
         .sub-menu a {
             color: rgb(255, 255, 255);
             padding: 12px 16px;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px ;
+            font-size: 20px;
             text-decoration: none;
             display: block;
         }
@@ -199,7 +202,7 @@
         }
 
         .section-container {
-            position: relative; 
+            position: relative;
             z-index: 1;
         }
 
@@ -227,7 +230,7 @@
         }
 
         .menu-item button {
-            background-color: #5ad160; 
+            background-color: #5ad160;
             border: none;
             color: rgb(0, 0, 0);
             padding: 10px;
@@ -243,21 +246,13 @@
             color: #45a049;
         }
 
-        #about {
-            background-color: rgba(0, 0, 0, 0.5); 
-        }
-
-        #contact {
-            background-color: rgba(0, 0, 0, 0.5); 
-        }
-
         .contact-form {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .contact-form input {
+        .contact-form input, .contact-form textarea {
             width: 80%;
             padding: 10px;
             margin: 10px 0;
@@ -278,11 +273,6 @@
 
         .contact-form button:hover {
             background-color: #45a049;
-        }
-
-        #log-in {
-            background-color: rgba(0, 0, 0, 0.5); 
-            
         }
 
         .log-in-form {
@@ -315,11 +305,9 @@
         .log-in-button:hover {
             background-color: #45a049;
         }
-
     </style>
 </head>
 <body>
-
     <div class="topnav">
         <div class="nav-links">
             <a class="button" href="#home">HOME</a>
@@ -340,29 +328,29 @@
         </div>
     </div>
 
-    <section id="home">
-        <div class="main-images logo">
-            <img src="logobg.png" alt="Logo" style="width: 900px; height: 500px; border-radius: 100%;">
-        </div>
+<section id="home">
+    <div class="main-images logo">
+        <img src="logobg.png" alt="Logo">
+    </div>
 
-        <div class="main-images logo-name">
-            <img src="foodfiestalogoname2.png" alt="Logo Name" style="width: 850px; height: 250px; border-radius: 100%;">
-        </div>
+    <div class="main-images logo-name">
+        <img src="foodfiestalogoname2.png" alt="Logo Name">
+    </div>
 
-        <img src="socmed.png" alt="SocMed" style="position: absolute; top: 800px; left: 0px; width: 250px;">
+    <img src="socmed.png" alt="Social Media" style="position: absolute; top: 800px; left: 0px; width: 250px;">
 
-        <a href="#menu1" class="order-button" style="position: absolute; top: 670px; left: 470px; font-weight: bold;">ORDER NOW!</a>
-   
-        <a href ="#log-in" class="sign-in-button" style="position: absolute; top: 800px; right: 20px; font-weight: bold;">Sign-In</a>
-    </section>
+    <a href="#menu1" class="order-button">ORDER NOW!</a>
 
-    <div class="divider"></div>
+    <a href="#log-in" class="sign-in-button">Sign-In</a>
+</section>
 
-    <section id="menu1" class="section-container">
-        <h1 style = "font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; 
+<div class="divider"></div>
+
+<section id="menu1" class="section-container">
+    <h1 style = "font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; 
         position: absolute; top: 1030px; left: 540px; color: #ffffff;">Menu 1</h1>
-        <div class="menu-orders">
-            <div class="menu-item">
+    <div class="menu-orders">
+       <div class="menu-item">
 
                 <img src="stickdog.jpg" alt="STICKDOG">
                 <button>STICKDOG <br> Starts at ₱ 10.00 || ⭐⭐⭐⭐☆</button>
@@ -410,16 +398,16 @@
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <div class="divider"></div>
+<div class="divider"></div>
 
-    <section id="menu2" class="section-container">
-        <h1 style = "font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; 
+<section id="menu2" class="section-container">
+    <h1 style = "font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; 
         position: absolute; top: 700px; left: 540px; color: #ffffff;">Menu 2</h1>
-        <div class="menu-orders">
-
-            <div class="menu-item">
+    <div class="menu-orders">
+        <div class="menu-item">
                 <img src="coke.jpg" alt="Coke">
                 <button>COKE <br> Starts at ₱ 15.00 || S | M | L || ⭐⭐⭐⭐☆ </button>
             </div>
@@ -449,12 +437,13 @@
                 <button>BAVARIAN CREAM DONUT <br> Starts at ₱ 25.00 || <br> ⭐⭐⭐☆☆ </button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <div class="divider"></div>
+<div class="divider"></div>
 
-    <section id="about">
-        <h1 style="font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; color:#ffffff;">ABOUT</h1>
+<section id="about">
+   <h1 style="font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; color:#ffffff;">ABOUT</h1>
         <p style="font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; color: rgb(255, 255, 255); text-align: center;">
             Welcome to FoodFiesta, your ultimate culinary destination founded in 2024 in the heart of 
             Mamatid, Cabuyao, Laguna. Spearheaded by our visionary founding chef, Andrei Perfecto, 
@@ -470,11 +459,11 @@
             perfect blend of flavor, quality, and affordability that makes us the go-to spot for food lovers 
             in Laguna. Your fiesta of flavors awaits!
         </p>
-    </section>
+</section>
 
-    <div class="divider"></div>
+<div class="divider"></div>
 
-    <section id="contact">
+<section id="contact">
         <h1 style="font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; color:#ffffff;">Contact Us!</h1>
         <p style="font-size: 35px; font-family: 'Times New Roman', Times, serif; color: rgb(255, 255, 255); text-align: center;">
             You can find us with these number: 0995-525-4372 <br>
@@ -493,9 +482,9 @@
 
     </section>
 
-    <div class="divider"></div>
+<div class="divider"></div>
 
-    <section id="log-in">
+<section id="log-in">
         <h1 style="font-size: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; color:#ffffff;">Log-In</h1>
 
        <div class="log-in-form">
@@ -503,9 +492,6 @@
             <input type="password" id="password" name="password" placeholder="Your Password">
             <a href="#home" class="log-in-button">LOG-IN</a>
         </div>
-
-    </section>
 </body>
 </html>
-
 
